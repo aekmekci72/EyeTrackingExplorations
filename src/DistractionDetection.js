@@ -332,11 +332,13 @@ const [distractionAlertCount, setDistractionAlertCount] = useState(0);
         height={window.innerHeight}
         style={{ position: 'fixed', top: 0, left: 0, zIndex: 1000 }}
       />
-      <div style={{ position: 'absolute', top: 600, left: 500, background: 'rgba(255,255,255,0.7)', padding: '10px' }}>
+      {isCalibrated && (
+      <div style={{ position: 'fixed', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 1001 }}>
       <p>Screen View Time: {screenViewTime} seconds</p>
       <p>Off Screen Time: {timeOff} seconds</p>
       <p>Distraction Alerts: {distractionAlertCount}</p>
     </div>
+      )}
       {!isCalibrated && (
         <div style={{ position: 'fixed', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 1001 }}>
           Calibrating... Please look at the blue dots as they appear.

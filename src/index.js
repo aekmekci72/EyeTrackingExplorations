@@ -1,17 +1,34 @@
+// MainApp.js
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './index.css';
+
 import App from './App';
+import DistractionDetection from './DistractionDetection';
+import HeatMap from './HeatMap';
+// import * as serviceWorker from './serviceWorker';
+
 import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+function MainApp() {
+  return (
+      <Router>
+        <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/distractiondetection" element={<DistractionDetection />} />
+        <Route path="/heatmap" element={<HeatMap />} />
+        
+        </Routes>
+      </Router>
+  );
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+ReactDOM.render(
+  <React.StrictMode>
+    <MainApp />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+// serviceWorker.register(); 
 reportWebVitals();

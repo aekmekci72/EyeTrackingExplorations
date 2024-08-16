@@ -2,7 +2,6 @@
 /* eslint-disable no-restricted-globals */
 
 
-// eyeTrackerWorker.js
 let webgazer;
 let gazeHistory = [];
 let offScreenGazeHistory = [];
