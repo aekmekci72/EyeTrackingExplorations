@@ -1,0 +1,8 @@
+/* Eye.css */
+.dot {
+    position: 'fixed';
+    background: 'red';
+    width: '10px';
+    height: '10px';
+    transform: 'translate(-50%, -50%)';
+  }
