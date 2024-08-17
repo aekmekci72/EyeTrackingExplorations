@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Eye Tracking Explorations
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This web application built with React and WebGazer provides real-time eye tracking capabilities and hosts two experimental tools designed to enhance focus and productivity by detecting distractions and analyzing gaze patterns. Both tools require an initial calibration process to ensure accurate results tailored to the user. 
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+This application consists of a main page that leads to two experimental tools:
+1. Distraction Detection Tool
+2. Heatmap Visualization Tool
 
-### `npm start`
+### Distraction Detection Tool
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This monitors the user's gaze and detects when they are distracted to notify them to get back on task, making it an ideal companion for study sessions or any task requiring sustained attention. It includes smart detection for phone distractions, alerting the user if their attention shifts to a device away from the hosting one. The tool aims to help users maintain focus and minimize distractions during critical work periods.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Heatmap Visualization Tool
 
-### `npm test`
+This tool generates a heatmap of where the user looks most frequently on the screen. By analyzing gaze data, it visualizes areas of the screen that capture the user's attention the most, providing insights into user interaction patterns. This can be particularly useful for UI/UX research, web design optimization, or simply understanding personal attention habits.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Use Cases
+* **Study Sessions**: The distraction detecion tool monitors focus and reduces the impact of distractions, which can be particularly useful when studying for upcoming exams.
+* **Productivity Enhancement**: By minimizing distractions and tracking gaze patterns, these tools can help improve productivity and time management.
+* **UI/UX Research**: The heatmap visualization tool gathers data on where users focus most on a webpage. This information can be valuable for refining design elements and improving overall user experience.
+* **Personal Attention Analysis**: Individuals interested in understanding their own attention habits can learn more about their focus patterns and natural gave movements. 
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Usage
+To run EyeTrackingExplorations locally, follow these steps:
+1. **Clone the Repository:**
+- Clone the QuizMeAI repository to your local machine.
+2. **Navigate to the project directory:**
+```
+cd EyeTrackingExplorations
+```
+3. **Install dependencies:**
+```
+npm install
+```
+4. **Start the development server:**
+```
+npm start
